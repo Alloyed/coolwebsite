@@ -22,10 +22,12 @@ It's notable in that it doesn't contain:
 starting your own project from CoolWebsite is simple (if you know how git works)
 
 ```bash
-$ git clone <url>
+$ git clone https://github.com/Alloyed/coolwebsite.git
 ```
 
 alternately, you can always download the latest release and unzip it on your computer!
+
+https://github.com/Alloyed/coolwebsite/releases
 
 Now that you have that, you have a website! CoolWebsite works out of the box with no configuration.
 
