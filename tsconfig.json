@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // Strict mode, but allow users to write js files if desired.
+    "strict": true,
+    "allowJs": true,
+    // These flags are recommended by esbuild: https://esbuild.github.io/content-types/#typescript
+    "module": "ES2015",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "useDefineForClassFields": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // disable typescript emitter. we're using a bundler instead.
+    "noEmit": true
+  },
+  "include": ["src/**/*"]
+}

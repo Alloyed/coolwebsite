@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+    the DOCTYPE tag tells the browser to interpret this file as html5. it _must_ be the first line in the file.
+    The lang tag reports to the browser that the following content is in English('en').
+-->
+<html lang="en">
+
+<head>
+  <!-- charset reports to the browser that the following content is in
+    unicode. Almost all text is in unicode, these days.  -->
+  <meta charset="UTF-8">
+  <!-- Reports to mobile browsers that they should render the contents at the
+    device's width, rather than making the website wider than your device and
+    forcing you to scroll. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Used by Microsoft browsers to run in the newer chromium-based layout engine. -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Displayed as the tab name for your page. -->
+  <title>Website Title</title>
+
+  <!-- loads our css. we can include as many stylesheets as we'd like. -->
+  <link rel="stylesheet" href="./index.css">
+  <!--
+        Uncomment the following block to add a custom favicon.
+        Normally, web browsers prefer to have lots of different icons at different sizes.
+        However, our bundler will generate these from a single png for us,
+        automatically!
+        https://github.com/chialab/rna/tree/main/packages/esbuild-plugin-html#icons
+    -->
+  <!--
+  <link rel="icon" href="./logo.png" type="image/png">
+  -->
+</head>
+
+<body>
+  <!-- Put your desired content in here. -->
+  <main>
+    <h1>Wow, cool website!</h1>
+  </main>
+  <!--
+        Here you can load scripts. Generally speaking, it's better to have a
+        single script and use import statements from within that script, so they
+        all can get bundled into a single file.
+
+        Putting it last like this means the rest of the page will start loading
+        before the script starts loading, which is a good idea if (like many
+        webapps) you have a huge bundle of js to deliver.
+
+        You must including a closing </script> tag, self-closing tags are
+        disallowed. This is for historical reasons, you can google to find out
+        why :p
+    -->
+  <script src="./index.ts"></script>
+</body>
+
+</html>

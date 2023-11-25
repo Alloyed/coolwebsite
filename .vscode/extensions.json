@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-vscode.live-server",
+    "ecmel.vscode-html-css",
+    "html-validate.vscode-html-validate",
+    "EditorConfig.EditorConfig"
+  ]
+}
